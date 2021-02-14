@@ -7,19 +7,19 @@ import lombok.Setter;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
 @Getter
 @Setter
+@Entity
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class Cliente {
+public class Estoque {
 
-    @EqualsAndHashCode.Include
     @Id
+    @EqualsAndHashCode.Include
     private Integer id;
 
-    private String nome;
+    private Integer produtoId;
 
-    private SexoCliente sexo;
+    private Integer quantidade;
 
 
 }
